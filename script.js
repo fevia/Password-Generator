@@ -9,8 +9,9 @@ function writePassword() {
   passwordText.value = password;
 }
 
-function generatePassword() {
-    var passwordLength = prompt("Enter the number of characters you want for your new password.  It must be more than 8 but less than 128.");
+function generatePassword(){
+    var passwordLength = prompt("Enter the number of characters you want for your new password.  It must be more than 8 but less than 128.")
+}
   
 
 // Add event listener to generate button
