@@ -10,7 +10,12 @@ function writePassword() {
 }
 
 function generatePassword(){
-    var passwordLength = prompt("Enter the number of characters you want for your new password.  It must be more than 8 but less than 128.")
+    var passwordLength = prompt("Enter the number of characters you want for your new password.  It must be more than 8 but less than 128.");
+    var numbers = confirm("Would you like numbers in your password?");
+    var lowerCases = confirm("Would you like lowercases in your password?");
+    var upperCases = confirm("Would you like uppercases in your password?");
+    var special = confirm("Would you like special characters in your password?");
+    var minimumCount = 0;
 }
   
 
