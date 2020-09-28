@@ -16,8 +16,28 @@ function generatePassword(){
     var upperCases = confirm("Would you like uppercases in your password?");
     var special = confirm("Would you like special characters in your password?");
     var minimumCount = 0;
+
+    var minimumNumbers="";
+    var minimumLowerCases="";
+    var minimumUpperCases="";
+    var minimumSpecialCharacters="";
 }
-  
+
+var functionArray = {
+        getNumbers: function(){
+            return String.fromCharCode(Math.floor(Math.random() * 10 + 48));
+        },
+        getLowerCases: function(){
+            return String.fromCharCode(Math.floor(Math.random() * 26 + 97));
+        },
+        getUpperCases: function(){
+            return String.fromCharCode(Math.floor(Math.random() * 26 +65));
+        },
+        getSpecialCharacters: function(){
+            return specialCharacters[Math.floor(Math.random() * specialCharacters.length)]       
+        }
+};
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
